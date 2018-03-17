@@ -1,0 +1,56 @@
+/*------- Background da pagina -------*/
+body{
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*-------- Paginação --------*/
+
+.galeria{
+  margin-bottom: 0px !important;
+  padding: 5%;
+}
+
+.galeria img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  margin-top: 1em;
+  border-radius: 2em;
+  transition: all 0.5s;
+  margin-top: -3em;
+}
+
+.galeria .fa{
+  font-size: 4em;
+  color: white;
+  position: relative;
+  top: 0px;
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: 1000;
+}
+
+.galeria .col:hover img{
+  filter: brightness(30%);
+}
+
+.galeria .col:hover .fa{
+  opacity: 1;
+  top: 130px;
+}
+
+/*--------- Tipografia ----------*/
+
+@font-face{
+  font-family: 'alt';
+  src: url(../fonts/montserrat.ttf);
+}
+
+*{
+  font-family: 'alt';
+}
