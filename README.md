@@ -1,1 +1,1 @@
-# curso-git
+# Galeria
